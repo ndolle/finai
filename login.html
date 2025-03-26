@@ -1,0 +1,233 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login Form</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+        
+        .bg-image {
+            background-image: url("https://images.unsplash.com/photo-1557682250-f5333c76fc38?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&w=1600");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .login-container {
+            width: 90%;
+            max-width: 400px;
+            animation: fadeIn 1s;
+        }
+        
+        .login-box {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .login-header {
+            background: linear-gradient(45deg, #009688, #4CAF50);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .input-container {
+            position: relative;
+            margin-bottom: 25px;
+        }
+        
+        .input-icon {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #009688;
+        }
+        
+        .login-input {
+            width: 100%;
+            padding: 10px 10px 10px 40px;
+            border: none;
+            border-bottom: 2px solid #ddd;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+        
+        .login-input:focus {
+            outline: none;
+            border-bottom-color: #009688;
+            background-color: white;
+        }
+        
+        .login-button {
+            background: linear-gradient(45deg, #009688, #4CAF50);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+            font-size: 16px;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        
+        .login-button:hover {
+            opacity: 1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .social-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .social-icon {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #555;
+            transition: all 0.3s;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+        
+        .fa-facebook {
+            color: #3b5998;
+        }
+        
+        .fa-twitter {
+            color: #1da1f2;
+        }
+        
+        .fa-google {
+            color: #db4437;
+        }
+        
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        
+        .divider-line {
+            flex-grow: 1;
+            height: 1px;
+            background-color: #ddd;
+        }
+        
+        .divider-text {
+            padding: 0 10px;
+            color: #777;
+            font-size: 14px;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .signup-link a {
+            color: #009688;
+            text-decoration: none;
+        }
+        
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-image">
+        <div class="overlay">
+            <div class="login-container">
+                <div class="login-box w3-animate-zoom">
+                    <div class="login-header">
+                        <h2><i class="fas fa-user-circle"></i></h2>
+                        <h3 class="w3-wide">USER LOGIN</h3>
+                    </div>
+                    
+                    <div class="w3-container w3-padding-16">
+                        <form>
+                            <div class="input-container">
+                                <i class="fas fa-envelope input-icon"></i>
+                                <input type="email" class="login-input" placeholder="Email Address" required>
+                            </div>
+                            
+                            <div class="input-container">
+                                <i class="fas fa-lock input-icon"></i>
+                                <input type="password" class="login-input" placeholder="Password" required>
+                            </div>
+                            
+                            <div class="remember-forgot">
+                                <label class="w3-text-grey">
+                                    <input class="w3-check" type="checkbox"> Remember me
+                                </label>
+                                <a href="#" class="w3-text-teal">Forgot password?</a>
+                            </div>
+                            
+                            <button type="submit" class="login-button">LOGIN</button>
+                            
+                            <div class="divider">
+                                <div class="divider-line"></div>
+                                <span class="divider-text">OR CONNECT WITH</span>
+                                <div class="divider-line"></div>
+                            </div>
+                            
+                            <div class="social-container">
+                                <a href="#"><i class="fab fa-facebook social-icon"></i></a>
+                                <a href="#"><i class="fab fa-google social-icon"></i></a>
+                                <a href="#"><i class="fab fa-twitter social-icon"></i></a>
+                            </div>
+                            
+                            <div class="signup-link">
+                                Don't have an account? <a href="#">Sign up now</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

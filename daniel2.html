@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel 2: God's Prophetic Timeline - Bible Study</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem 0;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .verse-highlight {
+            background: #f8f9fa;
+            border-left: 5px solid #3498db;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            font-style: italic;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .main-content {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .sidebar {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            height: fit-content;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: #34495e;
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        .kingdom-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 5px solid #e74c3c;
+            transition: transform 0.3s ease;
+        }
+
+        .kingdom-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .kingdom-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .kingdom-metal {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .gold { background: #f1c40f; color: #2c3e50; }
+        .silver { background: #bdc3c7; color: #2c3e50; }
+        .bronze { background: #d35400; color: white; }
+        .iron { background: #7f8c8d; color: white; }
+        .clay { background: #8b4513; color: white; }
+
+        .key-points {
+            background: #e8f5e8;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .key-points h4 {
+            color: #27ae60;
+            margin-bottom: 1rem;
+        }
+
+        .key-points ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .key-points li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #d5e8d5;
+        }
+
+        .key-points li:before {
+            content: "✓ ";
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .prayer-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .discussion-questions {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .discussion-questions h4 {
+            color: #856404;
+            margin-bottom: 1rem;
+        }
+
+        .discussion-questions ol {
+            padding-left: 1.5rem;
+        }
+
+        .discussion-questions li {
+            margin: 0.8rem 0;
+            color: #856404;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .timeline-marker {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .timeline-content {
+            flex: 1;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .resources {
+            background: #e3f2fd;
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+
+        .resources h4 {
+            color: #1976d2;
+            margin-bottom: 1rem;
+        }
+
+        .resources ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .resources li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #bbdefb;
+        }
+
+        .resources a {
+            color: #1976d2;
+            text-decoration: none;
+        }
+
+        .resources a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+
+        .footer {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            text-align: center;
+            border-radius: 15px;
+            margin-top: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daniel 2: God's Prophetic Timeline</h1>
+            <p class="subtitle">"He who reveals secrets has made known to you what will be" - Daniel 2:29</p>
+        </header>
+
+        <div class="verse-highlight">
+            <strong>Daniel 2:44</strong> - "And in the days of these kings the God of heaven will set up a kingdom which shall never be destroyed; and the kingdom shall not be left to other people; it shall break in pieces and consume all these kingdoms, and it shall stand forever."
+        </div>
+
+        <div class="content-grid">
+            <main class="main-content">
+                <section class="section">
+                    <h2>Study Overview</h2>
+                    <p>This Bible study explores one of the most significant prophetic chapters in Scripture - Daniel 2. Through King Nebuchadnezzar's dream of a great image, God reveals the rise and fall of world empires from Babylon to the establishment of His eternal kingdom [[11]].</p>
+                    
+                    <div class="key-points">
+                        <h4>Key Themes</h4>
+                        <ul>
+                            <li>God's sovereignty over human history</li>
+                            <li>The temporary nature of earthly kingdoms</li>
+                            <li>The eternal nature of God's kingdom</li>
+                            <li>The importance of prayer in understanding prophecy</li>
+                            <li>The contrast between human wisdom and divine revelation</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>The Historical Context</h2>
+                    <p>The story begins with King Nebuchadnezzar's troubled thoughts about the future of his kingdom. As Daniel explains, "thoughts came to your mind while on your bed about what would come to pass after this" [[11]]. God, who knows our thoughts, responded to the king's concerns by giving him a prophetic dream.</p>
+                    
+                    <h3>God's Purpose in the Forgotten Dream</h3>
+                    <p>When Nebuchadnezzar forgot his dream, it wasn't by accident. God had a specific purpose: to expose the bankruptcy of Babylon's religious system [[11]]. The magicians, astrologers, and sorcerers admitted their limitations, saying "there is no other who can tell it to the king except the gods, whose dwelling is not with flesh" [[11]].</p>
+                </section>
+
+                <section class="section">
+                    <h2>The Great Image: Four World Empires</h2>
+                    
+                    <div class="kingdom-card">
+                        <div class="kingdom-title">1. Babylon (Head of Gold)</div>
+                        <span class="kingdom-metal gold">GOLD</span>
+                        <p>Represented by King Nebuchadnezzar himself. Daniel told the king, "You, O king, are a king of kings, for the God of heaven has given you a kingdom, power, strength, and glory" [[11]].</p>
+                    </div>
+
+                    <div class="kingdom-card">
+                        <div class="kingdom-title">2. Medo-Persia (Chest and Arms of Silver)</div>
+                        <span class="kingdom-metal silver">SILVER</span>
+                        <p>The kingdom that conquered Babylon under Darius the Mede, as recorded in Daniel 5 [[11]].</p>
+                    </div>
+
+                    <div class="kingdom-card">
+                        <div class="kingdom-title">3. Greece (Belly and Thighs of Bronze)</div>
+                        <span class="kingdom-metal bronze">BRONZE</span>
+                        <p>The third kingdom mentioned by name in Daniel 8, which conquered the Medo-Persian Empire [[11]].</p>
+                    </div>
+
+                    <div class="kingdom-card">
+                        <div class="kingdom-title">4. Rome (Legs of Iron)</div>
+                        <span class="kingdom-metal iron">IRON</span>
+                        <p>The fourth kingdom "shall be as strong as iron" and "will break in pieces and crush all others." Historian Edward Gibbon called Rome "the iron monarchy of Rome" [[11]].</p>
+                    </div>
+
+                    <div class="kingdom-card">
+                        <div class="kingdom-title">5. Divided Rome (Feet of Iron and Clay)</div>
+                        <span class="kingdom-metal iron">IRON</span> <span class="kingdom-metal clay">CLAY</span>
+                        <p>The Roman Empire divided into ten kingdoms, with the addition of a religious element (potter's clay) representing the union of church and state [[11]].</p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>The Significance of Potter's Clay</h2>
+                    <p>The potter's clay represents God's people, as explained in Jeremiah 18:1-6. Just as the potter forms vessels from clay, God formed Israel as His people [[11]]. In the context of Daniel 2, the clay mixed with iron represents the union of church and state during the divided Roman period.</p>
+                    
+                    <div class="key-points">
+                        <h4>Biblical Evidence for Potter's Clay</h4>
+                        <ul>
+                            <li>Jeremiah 18:6 - "As the clay is in the potter's hand, so are you in My hand, O house of Israel"</li>
+                            <li>Genesis 2:7 - God formed man from the dust (potter's clay)</li>
+                            <li>The church as the body of Christ (Colossians 1:18)</li>
+                            <li>Revelation 17 describes the same union with different symbols</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>The Stone Cut Without Hands</h2>
+                    <p>The climax of the prophecy is the stone "cut out without hands" that destroys the image and becomes a great mountain filling the whole earth [[11]]. This represents Jesus Christ and His eternal kingdom.</p>
+                    
+                    <h3>Key Characteristics:</h3>
+                    <ul>
+                        <li><strong>Cut without hands:</strong> Not made by human effort (Hebrews 9:11)</li>
+                        <li><strong>Destroys all earthly kingdoms:</strong> Establishes God's eternal rule</li>
+                        <li><strong>Fills the whole earth:</strong> A universal kingdom</li>
+                        <li><strong>Established by divine intervention:</strong> Not through human political maneuvering</li>
+                    </ul>
+
+                    <div class="verse-highlight">
+                        <strong>Matthew 21:44</strong> - "Whoever falls on this stone will be broken; but on whomever it falls, it will grind him to powder."
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Lessons for Today</h2>
+                    <p>This prophecy teaches us several important principles:</p>
+                    
+                    <div class="key-points">
+                        <h4>Practical Applications</h4>
+                        <ul>
+                            <li>God is sovereign over human history</li>
+                            <li>Prayer is the method for understanding God's will</li>
+                            <li>Human wisdom is limited; divine revelation is sure</li>
+                            <li>We must choose to fall on the stone (be converted) rather than have it fall on us</li>
+                            <li>Christ's kingdom comes through spiritual, not political means</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <div class="discussion-questions">
+                    <h4>Discussion Questions</h4>
+                    <ol>
+                        <li>How does God's knowledge of Nebuchadnezzar's thoughts encourage us in our prayer life?</li>
+                        <li>What does the failure of Babylon's wise men teach us about human wisdom versus divine revelation?</li>
+                        <li>How do we see the principle of church-state union playing out in history and today?</li>
+                        <li>What does it mean to "fall on the stone" in our personal lives?</li>
+                        <li>How should understanding this prophecy affect our view of current world events?</li>
+                    </ol>
+                </div>
+            </main>
+
+            <aside class="sidebar">
+                <div class="resources">
+                    <h4>Study Resources</h4>
+                    <ul>
+                        <li><a href="#">Daniel 2 Commentary</a></li>
+                        <li><a href="#">Historical Timeline</a></li>
+                        <li><a href="#">Prophecy Charts</a></li>
+                        <li><a href="#">Additional Studies</a></li>
+                    </ul>
+                </div>
+
+                <div class="timeline">
+                    <h4 style="color: #2c3e50; margin-bottom: 1rem;">Prophetic Timeline</h4>
+                    <div class="timeline-item">
+                        <div class="timeline-marker gold">1</div>
+                        <div class="timeline-content">
+                            <strong>Babylon</strong><br>
+                            605-539 BC
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker silver" style="background: #bdc3c7; color: #2c3e50;">2</div>
+                        <div class="timeline-content">
+                            <strong>Medo-Persia</strong><br>
+                            539-331 BC
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker bronze" style="background: #d35400;">3</div>
+                        <div class="timeline-content">
+                            <strong>Greece</strong><br>
+                            331-168 BC
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker iron" style="background: #7f8c8d;">4</div>
+                        <div class="timeline-content">
+                            <strong>Rome</strong><br>
+                            168 BC-476 AD
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker" style="background: linear-gradient(45deg, #7f8c8d 50%, #8b4513 50%);">5</div>
+                        <div class="timeline-content">
+                            <strong>Divided Rome</strong><br>
+                            476 AD-Second Coming
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-points" style="margin-top: 2rem;">
+                    <h4>Memory Verses</h4>
+                    <ul>
+                        <li><strong>Daniel 2:21</strong> - "He changes the times and the seasons"</li>
+                        <li><strong>Daniel 2:28</strong> - "There is a God in heaven who reveals secrets"</li>
+                        <li><strong>Daniel 2:44</strong> - "The God of heaven will set up a kingdom"</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <div class="prayer-section">
+            <h3>Closing Prayer</h3>
+            <p><em>"Father in heaven, what a joy it is once again to come into your presence, knowing that you are the God who knows the end from the beginning. Help us to admire you more each day because you are all-wise, omniscient, all-powerful, eternal. Thank you for revealing your secrets to us through your Word. In Jesus' name, Amen." [[11]]</em></p>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2025 Bible Study Series | "His Way Is In the Sanctuary" | All rights reserved</p>
+            <p><em>Study based on Daniel 2 exposition by Steven Bohr</em></p>
+        </footer>
+    </div>
+</body>
+</html>
